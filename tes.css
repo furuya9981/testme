@@ -1,0 +1,35 @@
+h1, h2, h3, h4 {
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+h1, h2, h3, h4:hover {
+  transform: translateY(-4px);
+  color: #ff6600;
+}
+
+h1, h2, h3, h4 {
+  font-family: Arial, sans-serif;
+  margin: 0 0 10px;
+  color: #333;
+  text-align: center;
+}
+
+h1 {
+  font-size: 32px;
+  color:aqua
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 2;
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 1.5;
+  color:brown
+}
+
+h4 {
+  font-size: 16px;
+}

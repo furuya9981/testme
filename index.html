@@ -1,23 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>テストどぇら</title>
-  <link rel="stylesheet" href="tes.css">
+  <title>うちの掲示板</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>動いた！</h1>
-    <section>
-      <h2>
-        これが見出し２ということになります
-        <h3>
-          is this header?
-          <h4>
-            yes!
-          </h4>
-        </h3>
-      </h2>
+  <!-- ヘッダー -->
+  <header class="header__01">
+    <div class="logo__02">BoardApp</div>
+    <nav class="nav__03">
+      <a href="#" class="link__04">ログイン</a>
+      <a href="#" class="button__05">新規登録</a>
+    </nav>
+  </header>
+
+  <main class="main__06">
+    <!-- ヒーローセクション（ファーストビュー） -->
+    <section class="hero__07">
+      <h1 class="title__08">みんなで語ろう、つながろう。</h1>
+      <p class="text__09">あなたのコミュニティを見つける、自由でシンプルな掲示板サービス。</p>
+      <a href="#" class="button__10">無料でスレッドを立てる</a>
     </section>
+
+    <!-- 特徴セクション -->
+    <section class="features__11">
+      <div class="card__12">
+        <h2 class="subtitle__13">簡単作成</h2>
+        <p class="desc__14">面倒な設定は不要。誰でもすぐに新しいスレッドを立ち上げられます。</p>
+      </div>
+      <div class="card__12">
+        <h2 class="subtitle__13">リアルタイム</h2>
+        <p class="desc__14">サクサク動くシンプルなUIで、テンポ良く会話が弾みます。</p>
+      </div>
+      <div class="card__12">
+        <h2 class="subtitle__13">匿名＆オープン</h2>
+        <p class="desc__14">名無しでの書き込みにも対応。気軽に意見を交わすことができます。</p>
+      </div>
+    </section>
+  </main>
+
+  <!-- フッター -->
+  <footer class="footer__15">
+    <p class="copyright__16">&copy; 2026 BoardApp</p>
+  </footer>
 </body>
 </html>

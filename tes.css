@@ -1,124 +1,158 @@
-/* ベースリセットと基本設定 */
+/* ベース設定 */
 body {
   font-family: 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
   margin: 0;
   padding: 0;
-  background-color: #f8f9fa;
+  background-color: #fafafa;
   color: #333;
+  line-height: 1.6;
 }
 
 /* ヘッダー */
 .header__01 {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 5%;
-  background-color: #ffffff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-.logo__02 {
-  font-size: 24px;
-  font-weight: bold;
-  color: #007bff;
-}
-
-.nav__03 {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-}
-
-.link__04 {
-  text-decoration: none;
-  color: #555;
-  font-weight: bold;
-}
-
-.link__04:hover {
-  color: #007bff;
-}
-
-/* 共通ボタン */
-.button__05, .button__10 {
-  background-color: #007bff;
-  color: #ffffff;
-  padding: 10px 24px;
-  text-decoration: none;
-  border-radius: 6px;
-  font-weight: bold;
-  transition: background-color 0.3s;
-}
-
-.button__05:hover, .button__10:hover {
-  background-color: #0056b3;
-}
-
-/* ヒーローセクション */
-.hero__07 {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 60px 0;
   text-align: center;
-  padding: 100px 20px;
-  background: linear-gradient(135deg, #e0f2fe 0%, #ffffff 100%);
 }
 
-.title__08 {
-  font-size: 40px;
-  margin-bottom: 20px;
+.header-inner__02 {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.blog-title__03 {
+  font-size: 32px;
+  margin: 0 0 10px 0;
   letter-spacing: 1px;
 }
 
-.text__09 {
-  font-size: 18px;
-  margin-bottom: 40px;
-  color: #666;
+.blog-subtitle__04 {
+  font-size: 14px;
+  color: #bdc3c7;
+  margin: 0;
 }
 
-.button__10 {
-  font-size: 18px;
-  padding: 15px 40px;
-}
-
-/* 特徴セクション */
-.features__11 {
+/* レイアウト（メインとサイドバーを横並びにする） */
+.wrapper__05 {
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 30px;
-  padding: 80px 5%;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 1000px;
+  margin: 40px auto;
+  padding: 0 20px;
+  gap: 40px;
 }
 
-.card__12 {
-  background-color: #ffffff;
-  padding: 40px 30px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-  flex: 1;
-  min-width: 250px;
+.main-content__06 {
+  flex: 1; /* メインを広く取る */
+}
+
+/* 記事カード */
+.article-card__07 {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  margin-bottom: 30px;
+}
+
+.article-title__08 {
+  font-size: 22px;
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+}
+
+.article-meta__09 {
+  display: flex;
+  gap: 15px;
+  font-size: 13px;
+  color: #7f8c8d;
+  margin-bottom: 20px;
+}
+
+.category__11 {
+  background-color: #ecf0f1;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.article-excerpt__12 {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.read-more__13 {
+  display: inline-block;
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more__13:hover {
+  text-decoration: underline;
+}
+
+/* サイドバー */
+.sidebar__14 {
+  width: 280px; /* サイドバーの幅を固定 */
+}
+
+.profile-box__15 {
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
   text-align: center;
 }
 
-.subtitle__13 {
-  font-size: 22px;
-  margin-bottom: 15px;
-  color: #222;
+.sidebar-title__16 {
+  font-size: 16px;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+  color: #2c3e50;
 }
 
-.desc__14 {
+.profile-icon__17 {
+  width: 80px;
+  height: 80px;
+  background-color: #bdc3c7;
+  border-radius: 50%;
+  margin: 0 auto 15px auto;
+}
+
+.profile-name__18 {
+  font-weight: bold;
+  margin: 0 0 10px 0;
+}
+
+.profile-text__19 {
+  font-size: 13px;
   color: #555;
-  line-height: 1.7;
+  text-align: left;
 }
 
 /* フッター */
-.footer__15 {
+.footer__20 {
   text-align: center;
-  padding: 30px;
-  background-color: #2c3e50;
-  color: #ffffff;
+  padding: 20px;
+  background-color: #fff;
+  color: #7f8c8d;
+  border-top: 1px solid #ecf0f1;
+  margin-top: 40px;
 }
 
-.copyright__16 {
+.copyright__21 {
   margin: 0;
   font-size: 14px;
+}
+
+/* スマホ表示用（画面が狭いときは縦並びにする） */
+@media (max-width: 768px) {
+  .wrapper__05 {
+    flex-direction: column;
+  }
+  .sidebar__14 {
+    width: 100%;
+  }
 }

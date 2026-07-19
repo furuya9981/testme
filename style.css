@@ -1,0 +1,47 @@
+/* =========================================
+   記事詳細ページ用の追加スタイル
+========================================= */
+
+/* 記事全体の枠 */
+.detail-article__28 {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
+/* 記事タイトル */
+.detail-title__29 {
+  font-size: 28px;
+  margin: 0 0 15px 0;
+  color: #2c3e50;
+  line-height: 1.4;
+}
+
+/* 日付とカテゴリーのエリア */
+.detail-meta__30 {
+  display: flex;
+  gap: 15px;
+  font-size: 13px;
+  color: #7f8c8d;
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ecf0f1;
+}
+
+/* 本文エリア */
+.detail-body__31 p {
+  line-height: 1.8;
+  margin-bottom: 24px;
+  color: #444;
+  font-size: 16px;
+}
+
+/* 本文中の見出し（h2） */
+.detail-heading__32 {
+  font-size: 22px;
+  color: #2c3e50;
+  margin: 40px 0 20px 0;
+  padding-left: 12px;
+  border-left: 4px solid #3498db;
+}
